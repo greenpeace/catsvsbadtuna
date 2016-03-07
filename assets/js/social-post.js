@@ -119,14 +119,14 @@ function postCanvasToFacebook() {
 
 
         if (response.status === "connected") {
-            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
+            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
         } else if (response.status === "not_authorized") {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
             }, { scope: "publish_actions" });
         } else {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
             }, { scope: "publish_actions" });
         }
     
