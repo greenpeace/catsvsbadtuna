@@ -1,0 +1,22 @@
+.DS_Store
+Thumbs.db
+
+# Ignore netbeans folder
+nbproject/*
+
+# Eclipse project files
+/.cache
+.project
+/.settings
+.buildpath
+
+/.bundle
+/.bitballoon
+
+# Ignore the build directory (both Middleman and Jekyll)
+/build
+/_site
+
+# Ignore cache
+/.sass-cache
+/.cache

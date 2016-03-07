@@ -1,0 +1,50 @@
+# This file only works for git version 1.6+
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched.
+* text=auto
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.adoc text
+*.css text
+*.csv text
+*.ctp text
+*.erb text
+*.htm text
+*.html text
+*.inc text
+*.ini text
+*.js text
+*.json text
+*.md text
+*.mustache text
+*.php text
+*.pl text
+*.py text
+*.rb text
+*.scm text
+*.sql text
+*.tab text
+*.textile text
+*.tsv text
+*.txt text
+*.xml text
+.htaccess text
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+*.7z binary
+*.fla binary
+*.flv binary
+*.gif binary
+*.gz binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.mov binary
+*.mp3 binary
+*.mp4 binary
+*.png binary
+*.pyc binary
+*.swf binary
+*.ttf binary
+*.zip binary
