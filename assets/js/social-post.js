@@ -119,14 +119,14 @@ function postCanvasToFacebook() {
 
 
         if (response.status === "connected") {
-            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#catname').val()+" saves TIGERS. Your cat can too. Visit www.greenpeace.org/Catssavetigers and spread the message on International Tiger Day.");
+            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
         } else if (response.status === "not_authorized") {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#catname').val()+" saves TIGERS. Your cat can too. Visit www.greenpeace.org/Catssavetigers and spread the message on International Tiger Day.");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
             }, { scope: "publish_actions" });
         } else {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#catname').val()+" saves TIGERS. Your cat can too. Visit www.greenpeace.org/Catssavetigers and spread the message on International Tiger Day.");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.greenpeace.org/badtuna");
             }, { scope: "publish_actions" });
         }
     
@@ -145,7 +145,7 @@ function postCanvasToTwitter() {
     //var img = new Image();
     //window.location.href = img.src = decodedPng;
 
-    postImageToTwitterProxy("heroesgenerator", "image/png", decodedPng, "JINGLES saves TIGERS. Your cat can too. www.greenpeace.org/Catssavetigers #CatsSaveTigers #Tigerday @GreenpeaceUK");
+    postImageToTwitterProxy("heroesgenerator", "image/png", decodedPng, "Cats vs #BadTuna http://www.greenpeace.org/badtuna @Greenpeace");
 
 };
 

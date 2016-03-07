@@ -1,171 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Cats Save Tigers | Greenpeace</title>
-  <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/8bit-wonder" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/comic-relief" rel="stylesheet" type="text/css" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
-  <!-- Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Greenpeace - Cats save Tigers" />
-  <meta property="og:description" content="The biggest cats online save the biggest cats in the wild. Upload your cat pic and join the cause! ROAR! - http://www.catssavetigers.org" />
-  <meta property="og:url" content="http://www.catssavetigers.org" />
-  <meta property="og:image" content="http://www.catssavetigers.org/assets/images/video-image.png" />
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Cats vs Bad Tuna | Greenpeace</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
-<body onload="document.getElementById('country').value = geoplugin_countryCode();">
-<header id="header"> 
-  <a href="http://www.greenpeace.org" target="_blank"><img src="assets/images/greenpeace.png"></a>
-  <div id="toolbox" class="share-bar">
-    <span>Share this on</span>
-    <a class="addthis_button_twitter" ><img src="assets/images/twitter-share.png" /></a>
-    <a class="addthis_button_facebook" ><img src="assets/images/fb-share.png" /></a>
-  </div>
-</header>
-<div id="content">
-  <div id="title"> 
-    <img class="title" src="assets/images/title.png"><br />
-    <a href="https://twitter.com/search?f=realtime&q=%23catssavetigers&src=typd" target="_blank"><img class="hash" src="assets/images/hash.png"></a>
-  </div>
-  <div id="video">
-    <div id="videoimage">
-      <div class="aspect-holder"></div>
-      <img src="assets/images/video-image.png" width="100%">
-      <div class="play-btn"></div>
-    </div>
-    <div id="videoborder"> <img src="assets/images/video-border.png" width="100%"> </div>
-  </div>
-  <div id="form">
-    <input type="file" name="file" class="file" id="uploadimage" style="" />
-    <div id="formborder"></div>
-    <div id="formcontent">
-      <form>
-        <div class="upload-image">
-          <h1 class="hblue">Join The Cat Cause</h1>
-        </div>
-        <div class="upload-success success-title">
-          <h1 class="hblue">Thank you <span class="catnametext"></span> </h1>
-        </div>
-        <div class="top-prose">
-          <p>There are only about <span class="bold">3,000 tigers left in the wild worldwide</span>. Their homes are being destroyed for such things as palm oil in Indonesia, coal in India and timber in Sibeira. Greenpeace is working on the ground to <span class="bold">save the tigers</span>, and we need all the help we can get with spreading the word about our campaign.</p>
-          <p id="sharesuccess"></p>
-        </div>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
         
-        <div class="left-col upload-image">
-          <p id="showerror" class="error">Ooops something went wrong!</p>
-          <p id="furry-label">Upload your furry face</p>
-          <p id="upload-input"> 
-            <img id="uploadbtn" class="upload btn" src="assets/images/uploadbtn.png" data-src="assets/images/uploadbtn-hover.png" />
-            
-          </p>
-          <p class="catname-p">
-            <label>The name on your collar</label>
-            <br>
-            <input type="text" name="catname" id="catname" placeholder="I.E Jingles" />
-          </p>
-          <p class="message-p last">
-            <label>Give us your message</label>
-            <br>
-            <input type="text" name="message" id="message" placeholder="I.E. ROAR!"/>
-          </p>
-        </div>
-        <div class="left-col upload-success">
-          <p>Now share your image! </p>
-          <p> <img class="facebook-btn btn" src="assets/images/fb-link.png" data-src="assets/images/fb-link-hover.png" /></p>
-          <!--<img src="assets/images/twitter-link.png" data-src="assets/images/twitter-link-hover.png" class="twitter-btn btn" /></p> -->
-          <p class="download">Download so you can share on Instagram, Twitter, Facebook with #CatsSaveTigers </p>
-          <p> <a id="dl" class="download" style="cursor:pointer;" download="Canvas.png"> <img class="btn" src="assets/images/download-image.png" data-src="assets/images/download-image-hover.png" /> </a> </p>
-        </div>
-        <div class="right-col">
-          <div class="image-holder" id="canvas-cont">
-            <canvas id="canvas" width='330' height='330'></canvas>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="clear upload-image bottom"> <a class="submit" style="cursor:pointer;"> <img class="btn" src="assets/images/createbtn.png" data-src="assets/images/createbtn-hover.png" /> </a> </div>
-        <div class="clear donate-container upload-success">
-          <p>Use the button below to donate to the save tigers, their habitat and our beautiful planet.</p>
-          <p> <a href="http://www.greenpeace.org/donate" target="_blank"><img class="donate btn" src="assets/images/Donate-paypal.png" data-src="assets/images/Donate-paypal-hover.png" /></a> </p>
-        </div>
-      </form>
-    </div>
-  </div>
-  <div id="sofar">
-    <div id="sofarborder"></div>
-    <div id="sofarcontent">
-      <h1 class="hpink"> <span class="num-sofar"></span> Cats So Far...</h1>
-      <div class="gallery-container"> 
-        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
-        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
-        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
-        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a>
-        <div class="clear"></div>
-      </div>
-      <a href="https://www.facebook.com/media/set/?set=a.10152374506168300.1073741868.7297163299&type=3&uploaded=3" target="_blank"><img src="assets/images/viewgallerybtn.png" /> </a>
-    </div>
-  </div>
-  <div id="email">
-    <div id="emailborder"></div>
-    <div id="emailcontent">
-      <h1 class="hred">Want To Know How You Can Help</h1></td>
-      <form name="signupnew" method="post" action="thankyou.htm">
-              <p>
-              <label>Sign up for our email</label>
-              
-              <input type="text" id="email-input" name="email" placeholder="email" style="line-height:150%;">
-              <input type="text" id="name-input" name="name" placeholder="name" style="line-height:150%;width:55%;">
-              <input type="text" id="phone-input" name="phone" placeholder="phone" style="line-height:150%;width:30%;">
-              <input type="hidden" name="country" id="country" />
-            </p>
-            <p><button type="submit"><img src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/assets/images/42f4f51155749fb30dabd6963e9d00bd29a075a3/signmebtn.png" /></button></p> 
-  </form>
-    </div>
-  </div>
-</div>
+        <link rel="canonical" href="http://www.catsvsbadtuna.org/" />
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon.png" />
 
-<footer id="footer"> 
-  <a href="http://www.greenpeace.org" target="_blank"><img src="assets/images/greenpeace.png"></a>
-  <span class="copy"> © 2014</span>
-  <ul class="legal-menu">
-					<li><a href="http://greenpeace.org/international/en/Help/privacy/">Privacy statement</a></li>
-					<li><a title="copyright policy" href="http://greenpeace.org/international/en/Help/copyright2/">Copyright</a></li>
-					<li><a title="copyright policy" href="http://greenpeace.org/international/en/about/contactus/">Contact us</a></li>
-  </ul>
-</footer>
+        <!-- open graph -->
+        <meta property="og:title" content="Greenpeace - Cats vs Bad Tuna" />
+        <meta property="og:description" content="Cats love tuna. But some companies trash oceans and exploit humans to catch it. Take action against #badtuna and help spread the word." />
+        <meta property="og:url" content="http://www.catsvsbadtuna.org/" />
+        <meta property="og:image" content="http://www.catsvsbadtuna.org/assets/images/video-image.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Greenpeace" />
+        
+        <!-- facebook app -->
+        <meta property="fb:app_id" content="910783989042597" />
+        
+        <!-- twitter -->
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:site" content="Greenpeace" />
 
-<script src="assets/js/jquery-1.11.1.min.js"></script> 
-<script src="assets/js/binary.js"></script> 
-<script src="assets/js/social-post.js"></script> 
-<script src="assets/js/script.js"></script>
-<script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-1234567-1']);
-      _gaq.push(['_trackPageview']);
-      _gaq.push(['account2._setAccount', 'UA-42981979-1']);
-      _gaq.push(['account2._trackPageview']);
-      _gaq.push(['account3._setAccount', 'UA-57175-1']);
-      _gaq.push(['account3._trackPageview']);
-      _gaq.push(['account4._setAccount', 'UA-48061181-1']);
-      _gaq.push(['account4._trackPageview']);
+        <!-- fonts -->
+        <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/8bit-wonder" />
+        <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/comic-relief" />
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="assets/css/style.css"  />
+        
+        <script type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
+    </head>
 
-      (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-</script>
+    <body onload="document.getElementById('country').value = geoplugin_countryCode();">
+        <header id="header"> 
+            <a href="http://www.greenpeace.org/badtuna" target="_blank"><img src="assets/images/greenpeace.png"></a>
+            <div id="toolbox" class="share-bar">
+                <span>Share this on</span>
+                <a class="addthis_button_twitter" ><img src="assets/images/twitter-share.png" /></a>
+                <a class="addthis_button_facebook" ><img src="assets/images/fb-share.png" /></a>
+            </div>
+        </header>
+        <div id="content">
+            <div id="title"> 
+                <img class="title" src="assets/images/title.png"><br />
+                <a href="https://twitter.com/search?f=realtime&q=%23badtuna&src=typd" target="_blank"><img class="hash" src="assets/images/hash.png"></a>
+            </div>
+            <div id="video">
+                <div id="videoimage">
+                    <div class="aspect-holder"></div>
+                    <img src="assets/images/video-image.png" style="width:100%; height:auto;" />
+                    <div class="play-btn"></div>
+                </div>
+                <div id="videoborder"> <img src="assets/images/video-border.png" style="width:100%; height:auto;" /> </div>
+            </div>
+            <div id="form">
+                <input type="file" name="file" class="file" id="uploadimage" style="" />
+                <div id="formborder"></div>
+                <div id="formcontent">
+                    <form>
+                        <div class="upload-image">
+                            <h1 class="hblue">Join The Cat Cause</h1>
+                        </div>
+                        <div class="upload-success success-title">
+                            <h1 class="hblue">Thank you <span class="catnametext"></span> </h1>
+                        </div>
+                        <div class="top-prose">
+                            <p>Cats love tuna. But some companies trash oceans and exploit humans to catch it. This means bad tuna ends up in the can. So Greenpeace started the Cats VS Bad Tuna mission, to make pet food companies to PROVE that they’re not using bad tuna in the can. Take action against <strong>#badtuna</strong> and help spread the word.</p>
+                            <p id="sharesuccess"></p>
+                        </div>
 
-    <!-- AddThis Button BEGIN -->
-    <script type="text/javascript">
-    var addthis_config = {
-        "data_track_clickback": false
-    };
-    </script>
-    <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-512785201da28d11"></script>
-    <!-- AddThis Button END -->
-<script src="https://aurora.grnpc.org/js/core/core.aurora.js"></script>
-</body>
+                        <div class="left-col upload-image">
+                            <p id="showerror" class="error">Ooops something went wrong!</p>
+                            <p id="furry-label">Upload your furry face</p>
+                            <p id="upload-input"> 
+                                <img id="uploadbtn" class="upload btn" src="assets/images/uploadbtn.png" data-src="assets/images/uploadbtn-hover.png" />
+
+                            </p>
+                            <p class="catname-p">
+                                <label>The name on your collar</label>
+                                <br>
+                                <input type="text" name="catname" id="catname" placeholder="e.g. Jingles" />
+                            </p>
+                            <p class="message-p last">
+                                <label>Give us your message</label>
+                                <br>
+                                <input type="text" name="message" id="message" placeholder="No more bad tuna!"/>
+                            </p>
+                        </div>
+                        <div class="left-col upload-success">
+                            <p>Now share your image! </p>
+                            <p> <img class="facebook-btn btn" src="assets/images/fb-link.png" data-src="assets/images/fb-link-hover.png" /></p>
+                            <!--p><img src="assets/images/twitter-link.png" data-src="assets/images/twitter-link-hover.png" class="twitter-btn btn" /></p-->
+                            <p class="download">Download so you can share on Instagram, Twitter, Facebook with #badTuna </p>
+                            <p> <a id="dl" class="download" style="cursor:pointer;" download="canvas.png"> <img class="btn" src="assets/images/download-image.png" data-src="assets/images/download-image-hover.png" /> </a> </p>
+                        </div>
+                        <div class="right-col">
+                            <div class="image-holder" id="canvas-cont">
+                                <canvas id="canvas" width='330' height='330'></canvas>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear upload-image bottom"> <a class="submit" style="cursor:pointer;"> <img class="btn" src="assets/images/createbtn.png" data-src="assets/images/createbtn-hover.png" /> </a> </div>
+                        <!--div class="clear donate-container upload-success">
+                            <p>Use the button below to donate to the save tigers, their habitat and our beautiful planet.</p>
+                            <p> <a href="http://www.greenpeace.org/donate" target="_blank"><img class="donate btn" src="assets/images/Donate-paypal.png" data-src="assets/images/Donate-paypal-hover.png" /></a> </p>
+                        </div-->
+                    </form>
+                </div>
+            </div>
+            <div id="sofar">
+                <div id="sofarborder"></div>
+                <div id="sofarcontent">
+                    <h1 class="hpink"> <span class="num-sofar"></span> Cats So Far...</h1>
+                    <div class="gallery-container"> 
+                        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
+                        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
+                        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a> 
+                        <a href="" target="_blank"><img class="smallthumb" src="assets/images/smallthumb.png" /></a>
+                        <div class="clear"></div>
+                    </div>
+                    <a href="https://www.facebook.com/greenpeace.nz/photos_stream?tab=photos_albums" target="_blank"><img src="assets/images/viewgallerybtn.png" /> </a>
+                </div>
+            </div>
+            <div id="email">
+                <div id="emailborder"></div>
+                <div id="emailcontent">
+                    <h1 class="hred">Take Action</h1></td>
+                    <form name="signupnew" method="post" action="thankyou.htm">
+                        <p>The global tuna industry is out of control. In a relentless search for profit, tuna suppliers have been caught doing anything to save a buck — including forcing people to work on fishing boats in horrific conditions, for little or no pay.</p>
+                        <p>
+                            <label>Take action against #BadTuna and show us your support!</label>
+                        </p>
+                        
+                        <p><a href="https://act.greenpeace.org/ea-action/action?ea.client.id=1939&ea.campaign.id=48309"><button type="submit"><img src="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/assets/images/42f4f51155749fb30dabd6963e9d00bd29a075a3/signmebtn.png" /></button></a></p> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer"> 
+            <a href="http://www.greenpeace.org" target="_blank"><img src="assets/images/greenpeace.png"></a>
+            <span class="copy"> &copy; 2016</span>
+            <ul class="legal-menu">
+                <li><a href="http://greenpeace.org/international/en/Help/privacy/">Privacy statement</a></li>
+                <li><a title="copyright policy" href="http://greenpeace.org/international/en/Help/copyright2/">Copyright</a></li>
+                <li><a title="copyright policy" href="http://greenpeace.org/international/en/about/contactus/">Contact us</a></li>
+            </ul>
+        </footer>
+
+        <script src="assets/js/jquery-1.11.1.min.js"></script> 
+        <script src="assets/js/binary.js"></script> 
+        <script src="assets/js/social-post.js"></script> 
+        <script src="assets/js/script.js"></script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-235924-30', 'auto');
+        ga('send', 'pageview');
+
+        </script>
+
+        <!-- AddThis Button BEGIN -->
+        <script type="text/javascript">
+        var addthis_config = {
+            "data_track_clickback": false
+        };
+        </script>
+        <script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-512785201da28d11"></script>
+        <!-- AddThis Button END -->
+        
+        <script src="https://aurora.grnpc.org/js/core/core.aurora.js"></script>
+    </body>
 </html>

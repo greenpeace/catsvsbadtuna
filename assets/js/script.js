@@ -15,10 +15,10 @@ $(document).ready(function() {
     //Sharing
     if (addthis) {
         addthis.toolbox('#toolbox', {}, {
-            url: "http://www.greenpeace.org/catssavetigers",
-            title: 'Greenpeace - Cats Save Tigers',
+            url: "http://www.catsvsbadtuna.org/",
+            title: 'Cats vs #BadTuna',
             templates: {
-			twitter: 'The biggest cats online save the biggest cats in the wild. Upload your cat pic and join the cause! ROAR! - {{url}}'
+			twitter: 'Cats love tuna. But some companies trash oceans and exploit humans to catch it. Upload your cat pic and help spread the word! - {{url}}'
             }
         });
     }
@@ -28,9 +28,7 @@ $(document).ready(function() {
     $('#videoimage').click(function() {
         $('#videoimage img').fadeOut();
         $('#videoimage').append('<div class="video-container"><iframe title="YouTube video player" width="' + $(videoimage).innerWidth() + 'px" height="' + $(videoimage).innerHeight() + 'px" src="//www.youtube.com/embed/FOLHV3hdDPw?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
-        _gaq.push(['_trackEvent', "Cat saves Tiger", "YouTube watched"]);
-        _gaq.push(['account2._trackEvent', "Cat saves Tiger", "YouTube watched"]);
-        _gaq.push(['account3._trackEvent', "Cat saves Tiger", "YouTube watched"]);
+        ga('send', 'event', 'Cats vs Bad Tuna', 'YouTube watched');
     });
     $(window).resize(function() {
         $('.video-container iframe').attr('width', $(videoimage).innerWidth() + 'px');
@@ -43,7 +41,7 @@ $(document).ready(function() {
     var global_signups;
     var liveCounter = function() {
         var getSigned = $.get(
-            "//moon.greenpeace.org/c/print.php?a=tigerday",
+            "//moon.greenpeace.org/c/print.php?a=badtuna",
             function(signed) {
                 global_signups = parseInt(signed);
             }
@@ -142,32 +140,24 @@ $(document).ready(function() {
             $('.upload-success').show();
             if ($('#showerror').css('display') !== 'none') $('#form').css('height', $('#form').outerHeight() - 40 + "px")
             $('#showerror').css('display', 'none');
-            _gaq.push(['_trackEvent', "Cat saves Tiger", "Meme created"]);
-            _gaq.push(['account2._trackEvent', "Cat saves Tiger", "Meme created"]);
-            _gaq.push(['account3._trackEvent', "Cat saves Tiger", "Meme created"]);
-            $("body").append("<img src='//moon.greenpeace.org/c/?a=tigerday' width='' height='' alt=''>");
+            ga('send', 'event', "Cats vs Bad Tuna", "Meme created");
+            $("body").append("<img src='//moon.greenpeace.org/c/?a=badtuna' width='' height='' alt=''>");
         } else {
             if ($('#showerror').css('display') !== 'block') $('#form').css('height', $('#form').outerHeight() + 40 + "px")
             $('#showerror').css('display', 'block');
-            _gaq.push(['_trackEvent', "Cat saves Tiger", "Meme submitted with errors"]);
-            _gaq.push(['account2._trackEvent', "Cat saves Tiger", "Meme submitted with errors"]);
-            _gaq.push(['account3._trackEvent', "Cat saves Tiger", "Meme submitted with errors"]);
+            ga('send', 'event', "Cats vs Bad Tuna", "Meme submitted with errors");
         }
 
     });
 
     $('.facebook-btn').click(function(event) {
         postCanvasToFacebook();
-        _gaq.push(['_trackEvent', "Cat saves Tiger", "Shared Meme to Facebook"]);
-        _gaq.push(['account2._trackEvent', "Cat saves Tiger", "Shared Meme to Facebook"]);
-        _gaq.push(['account3._trackEvent', "Cat saves Tiger", "Shared Meme to Facebook"]);
+        ga('send', 'event', "Cats vs Bad Tuna", "Shared Meme to Facebook");
     });
 
     $('.twitter-btn').click(function(event) {
         postCanvasToTwitter();
-        _gaq.push(['_trackEvent', "Cat saves Tiger", "Shared Meme to Twitter"]);
-        _gaq.push(['account2._trackEvent', "Cat saves Tiger", "Shared Meme to Twitter"]);
-        _gaq.push(['account3._trackEvent', "Cat saves Tiger", "Shared Meme to Twitter"]);
+        ga('send', 'event', "Cats vs Bad Tuna", "Shared Meme to Twitter");
     });
 
 
@@ -438,8 +428,6 @@ $('#email button').click(function() {
 function dlCanvas() {
     var dt = $("canvas")[0].toDataURL('image/png');
     this.href = dt;
-    _gaq.push(['_trackEvent', "Cat saves Tiger", "Meme downloaded"]);
-    _gaq.push(['account2._trackEvent', "Cat saves Tiger", "Meme downloaded"]);
-    _gaq.push(['account3._trackEvent', "Cat saves Tiger", "Meme downloaded"]);
+    ga('send', 'event', "Cats vs Bad Tuna", "Meme downloaded");
 };
 dl.addEventListener('click', dlCanvas, false);
