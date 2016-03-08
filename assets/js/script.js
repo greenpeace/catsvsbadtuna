@@ -22,13 +22,20 @@ $(document).ready(function() {
             }
         });
     }
+    
+    $('#addthis_button_twitter').click(function() {
+        ga('send', 'event', 'Share', 'Addthis Twitter');
+    });
+    $('#addthis_button_facebook').click(function() {
+        ga('send', 'event', 'Share', 'Addthis Facebook');
+    });
 
 
     //Youtube video
     $('#videoimage').click(function() {
         $('#videoimage img').fadeOut();
         $('#videoimage').append('<div class="video-container"><iframe title="YouTube video player" width="' + $(videoimage).innerWidth() + 'px" height="' + $(videoimage).innerHeight() + 'px" src="//www.youtube.com/embed/FOLHV3hdDPw?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
-        ga('send', 'event', 'Cats vs Bad Tuna', 'YouTube watched');
+        ga('send', 'event', 'Video', 'YouTube watched');
     });
     $(window).resize(function() {
         $('.video-container iframe').attr('width', $(videoimage).innerWidth() + 'px');
@@ -140,24 +147,24 @@ $(document).ready(function() {
             $('.upload-success').show();
             if ($('#showerror').css('display') !== 'none') $('#form').css('height', $('#form').outerHeight() - 40 + "px")
             $('#showerror').css('display', 'none');
-            ga('send', 'event', "Cats vs Bad Tuna", "Meme created");
+            ga('send', 'event', "Meme", "Meme created");
             $("body").append("<img src='//moon.greenpeace.org/c/?a=badtuna' width='' height='' alt=''>");
         } else {
             if ($('#showerror').css('display') !== 'block') $('#form').css('height', $('#form').outerHeight() + 40 + "px")
             $('#showerror').css('display', 'block');
-            ga('send', 'event', "Cats vs Bad Tuna", "Meme submitted with errors");
+            ga('send', 'event', "Meme", "Meme submitted with errors");
         }
 
     });
 
     $('.facebook-btn').click(function(event) {
         postCanvasToFacebook();
-        ga('send', 'event', "Cats vs Bad Tuna", "Shared Meme to Facebook");
+        ga('send', 'event', "Meme", "Shared Meme to Facebook");
     });
 
     $('.twitter-btn').click(function(event) {
         postCanvasToTwitter();
-        ga('send', 'event', "Cats vs Bad Tuna", "Shared Meme to Twitter");
+        ga('send', 'event', "Meme", "Shared Meme to Twitter");
     });
 
 
@@ -416,18 +423,14 @@ function validateEmail(email) {
     return re.test(email);
 } 
 
-$('#email button').click(function() {
-    if(!validateEmail($('#email-input').val())) {
-        return false;
-    } else {
-        return true;
-    }
-    return false;
+$('#take-action-button').click(function() {
+    ga('send', 'event', 'Take Action', 'Button clicked');
 });
+
 
 function dlCanvas() {
     var dt = $("canvas")[0].toDataURL('image/png');
     this.href = dt;
-    ga('send', 'event', "Cats vs Bad Tuna", "Meme downloaded");
+    ga('send', 'event', "Meme", "Meme downloaded");
 };
 dl.addEventListener('click', dlCanvas, false);
