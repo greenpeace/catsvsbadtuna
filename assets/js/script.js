@@ -23,12 +23,12 @@ $(document).ready(function() {
         });
     }
     
-    $('#addthis_button_twitter').click(function() {
-        ga('send', 'event', 'Share', 'Addthis Twitter');
-    });
-    $('#addthis_button_facebook').click(function() {
-        ga('send', 'event', 'Share', 'Addthis Facebook');
-    });
+    //$('#addthis_button_twitter').click(function() {
+    //    ga('send', 'event', 'Share', 'Addthis Twitter');
+    //});
+    //$('#addthis_button_facebook').click(function() {
+    //    ga('send', 'event', 'Share', 'Addthis Facebook');
+    //});
 
 
     //Youtube video
