@@ -53,15 +53,16 @@ $(document).ready(function() {
                 global_signups = parseInt(signed);
             }
         );
+        getSigned.async = 1;
         $.when(getSigned).done(function() {
             $('.num-sofar').html(global_signups);
         });
     };
-    setInterval(function() {
-        try {
+    //setInterval(function() {
+    //    try {
             liveCounter();
-        } catch (e) { /* . */ }
-    }, 1000);
+    //    } catch (e) { /* . */ }
+    //}, 1000);
 
     //
 
