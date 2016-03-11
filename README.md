@@ -9,7 +9,3 @@ Meme generator page for global tuna campaign. Based on [Cats save Tigers](http:/
 Please contact global tuna project team if you want to collaborate on this project.
 
 
-
-## Website Layout
-
-![Site Layout](https://raw.githubusercontent.com/greenpeace/catsvsbadtuna/master/assets/images/screenshot-full-web.jpg)
