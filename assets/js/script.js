@@ -99,7 +99,7 @@ $(document).ready(function() {
     // Get images for gallery
     $.ajax({
         type: 'GET',
-        url: 'assets/js/catImages.json',
+        url: 'assets/js/catimages.json',
         dataType: 'json',
         success: function(data) {
 
