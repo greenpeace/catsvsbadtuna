@@ -103,7 +103,7 @@ $(document).ready(function() {
         dataType: 'json',
         success: function(data) {
 
-            for (var a = [], i = 0; i < data.catImages.length - 1; ++i) a[i] = i;
+            for (var a = [], i = 0; i <= data.catImages.length - 1; ++i) a[i] = i;
             a = shuffle(a);
 
             $('.gallery-container img').each(function(index) {
