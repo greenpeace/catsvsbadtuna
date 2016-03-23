@@ -6,7 +6,7 @@ Meme generator page for global tuna campaign. Based on [Cats save Tigers](http:/
 
 ## Contributing to this project
 
-Please contact global tuna project team if you want to collaborate on this project.
+Please contact global tuna project team if you want to collaborate on this project...
 
 
 ## Website layout
