@@ -119,14 +119,14 @@ function postCanvasToFacebook() {
 
 
         if (response.status === "connected") {
-            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
+            postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.catsvsbadtuna.org");
         } else if (response.status === "not_authorized") {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.catsvsbadtuna.org");
             }, { scope: "publish_actions" });
         } else {
             FB.login(function (response) {
-                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "");
+                postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, $('#message').val()+" http://www.catsvsbadtuna.org");
             }, { scope: "publish_actions" });
         }
     
