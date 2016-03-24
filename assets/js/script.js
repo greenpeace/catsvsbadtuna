@@ -310,7 +310,7 @@ $(function() {
                     var img2 = this;
 
                     ctx.globalAlpha = 0.9;
-                    ctx.drawImage(img2, 12, cvsHeight - 44, 306, 44);
+                    ctx.drawImage(img2, 12, cvsHeight - 83, 306, 83);
 
                 }).attr("src", "assets/images/tagline.png");
 
