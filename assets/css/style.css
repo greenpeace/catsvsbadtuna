@@ -107,6 +107,7 @@ h1 { font-size:22px; line-height:22px; }
 }
 @media only screen and (min-width: 768px) {
 p, label, input { font-size:20px; line-height:20px; }
+#content #form .top-prose p { line-height: 26px; }
 input { line-height: 200%; }
 h1 { font-size:36px; line-height:36px; }
 #content #sofar {height: 715px; }
@@ -123,6 +124,7 @@ header#header .share-bar span { display: inline;}
 @media only screen and (min-width: 960px) {
 .left-col, .right-col {width: 50%;}
 p, label, input { font-size:26px; line-height:26px; }
+#content #form .top-prose p { line-height: 36px; }
 input { line-height: 200%; }
 h1 { font-size:45px; line-height:45px; }
 .gallery-container { width: 740px;}
