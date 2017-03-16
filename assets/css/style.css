@@ -89,11 +89,12 @@ footer#footer .copy {visibility:visible;}
 #content #sofar #sofarcontent img.smallthumb { border:2px solid #000000; margin-bottom:20px; width:100%; }
 #content #sofar #sofarcontent img.smallthumb:hover {border-color: #E480FA;}
 
-#content #email { text-align:center; position:relative; margin-bottom:30px;  width:100%; height: 330px;}
-#content #email #emailborder { position:absolute; z-index:1;  width:100%; height: 100%; top: 0; left: 0; background-image:url(../images/signup-border.png); background-size: 100% 100%;}
-#content #email #emailborder img { width:100%; height:220px;}
-#content #email #emailcontent { position:absolute; padding:1% 4% 5% 9%; margin:0 auto; width:87%; top:9.7%; z-index:2; }
-#content #email #emailcontent input { width:90%; }
+#content .email { text-align:center; position:relative; margin-bottom:30px;  width:100%; height: 530px;}
+#content .email .emailborder { position:absolute; z-index:1;  width:100%; height: 100%; top: 0; left: 0; background-image:url(../images/signup-border.png); background-size: 100% 100%;}
+#content .email .emailborder img { width:100%; height:220px;}
+#content .email .emailcontent { position:absolute; padding:1% 4% 5% 9%; margin:0 auto; width:87%; top:9.7%; z-index:2; }
+#content .email .emailcontent input { width:90%; }
+#content .email .emailcontent p { padding: 1em 1em 1em 1em; line-height: 1.5em; }
 
 @media only screen and (min-width: 480px) {
 p, label, input { font-size:20px; line-height:20px; }
@@ -101,8 +102,9 @@ input { line-height: 200%; }
 h1 { font-size:22px; line-height:22px; }
 /*#content #form #formcontent h1 { margin-bottom: 57px;}*/
 .gallery-container { width: 345px}
-#content #email #emailborder img { width:100%; height:100%;}
-#content #email {height: 350px;}
+#content .email .emailborder img { width:100%; height:100%;}
+#content .email {height: 400px;}
+#content .email .emailcontent p { padding: 1em 3em 1em 3em; }
 #content #sofar { height: 650px;}
 }
 @media only screen and (min-width: 768px) {
@@ -117,7 +119,7 @@ h1 { font-size:36px; line-height:36px; }
 #content #form .bottom {padding-top: 60px;}
 #content #form { height: 920px;}
 #content #form #formcontent {padding:52px 4% 5% 8%;}
-#content #email {height: 395px;}
+#content .email {height: 330px;}
 header#header .share-bar span { display: inline;}
 #content #form .top-prose { margin-bottom: 60px;}
 }
@@ -134,5 +136,5 @@ h1 { font-size:45px; line-height:45px; }
 #content #sofar {height: 530px; }
 #content #form { height: 1080px;}
 #content #sofar #sofarcontent img.smallthumb {}
-#content #email {height: 480px;}
+#content .email {height: 480px;}
 }
