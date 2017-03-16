@@ -34,7 +34,7 @@ $(document).ready(function() {
     //Youtube video
     $('#videoimage').click(function() {
         $('#videoimage img').fadeOut();
-        $('#videoimage').append('<div class="video-container"><iframe title="YouTube video player" width="' + $(videoimage).innerWidth() + 'px" height="' + $(videoimage).innerHeight() + 'px" src="//www.youtube.com/embed/yBesdHKKCck?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
+        $('#videoimage').append('<div class="video-container"><iframe title="YouTube video player" width="' + $(videoimage).innerWidth() + 'px" height="' + $(videoimage).innerHeight() + 'px" src="//www.youtube.com/embed/PhXRwiIaJOs?autoplay=1&rel=0" frameborder="0" allowfullscreen></iframe></div>');
         ga('send', 'event', 'Video', 'YouTube watched');
     });
     $(window).resize(function() {
